@@ -1,0 +1,17 @@
+### Get all bookings
+GET http://localhost:5001/api/bookings
+
+### Create new booking
+POST http://localhost:5001/api/bookings
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "petType": "cat",
+  "service": "grooming",
+  "date": "2025-03-01T10:00:00.000Z",
+  "notes": "My cat needs nail trimming",
+  "amount": 2000,
+  "currency": "usd"
+}
